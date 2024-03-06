@@ -4,9 +4,15 @@
 Android app which communicates with the public Github API to display
 information about a specific user.
 
+## Project Overview 
+
+This project is an Android application designed to display GitHub user information and their repositories. It follows the Clean Architecture principles, dividing the codebase into three primary layers: Data, Domain, and UI. This separation enhances the maintainability, testability, and scalability of the application.
+
+## Coding Pattern
+
+The project adopts the MVVM (Model-View-ViewModel) pattern for its architectural foundation, facilitating a clear separation between the application's user interface and the business logic. This pattern is particularly well-suited for handling lifecycle events and UI state management in Android development.
 
 ## Documentation:Data, Domain, and UI Layers
-
 
 
 
@@ -53,4 +59,12 @@ Responsibilities
 - **Data -> Domain**: The data layer returns data to the domain layer, often transforming it into domain models. UserRepository fetches data from UserApi and returns it as domain models to UserInfoUseCase.
 - **Domain -> UI**: Once the domain layer processes the data, it's passed back to the UI layer, where it's displayed to the user. UserInfoUseCase provides user information to UserInfoViewModel, which updates the UI.
 
-This architecture ensures a clear separation of concerns, making the code easier to understand, test, and maintain.
+## Additional Patterns and Practices
+- **Dependency Injection**: Utilizes Hilt for dependency injection, simplifying the process of providing dependencies to various components of the application.
+- **State Management**: Employs state handling within ViewModels to manage UI state and data, ensuring a reactive and responsive user experience.
+- **Asynchronous Programming**: Leverages Kotlin Coroutines and Flow for handling asynchronous operations and real-time data updates, making the app more efficient and user-friendly.
+- **Composable Functions**: Uses Jetpack Compose for building the UI, adopting a declarative approach to UI development that results in more concise and readable code.
+
+
+
+
