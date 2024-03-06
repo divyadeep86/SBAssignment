@@ -23,12 +23,9 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.sbtakehomeassignment.R
-import com.example.sbtakehomeassignment.common.uiComponents.CounterChip
 import com.example.sbtakehomeassignment.common.utils.Testags
 import com.example.sbtakehomeassignment.ui.theme.SBTakeHomeAssignmentTheme
 import com.example.sbtakehomeassignment.userInfo.domain.models.UserRepo
-import com.example.sbtakehomeassignment.userRepoDetails.ui.components.RepoHeader
 
 @Composable
 fun RepoItem(userRepo: UserRepo, onclickItem: (Int) -> Unit) {

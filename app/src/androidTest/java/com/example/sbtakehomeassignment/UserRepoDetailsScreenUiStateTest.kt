@@ -3,9 +3,7 @@ package com.example.sbtakehomeassignment
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.sbtakehomeassignment.userInfo.domain.models.UserInfo
 import com.example.sbtakehomeassignment.userInfo.domain.models.UserRepo
-import com.example.sbtakehomeassignment.userInfo.ui.UserInfoScreen
 import com.example.sbtakehomeassignment.userRepoDetails.ui.UserRepoDetailsScreen
 import org.junit.Rule
 import org.junit.Test

@@ -1,32 +1,15 @@
 package com.example.sbtakehomeassignment
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.aspectRatio
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.wrapContentSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
-import androidx.compose.ui.Alignment
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.testTag
+
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithTag
-import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.unit.dp
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.sbtakehomeassignment.common.states.RequestProgressStatus
 import com.example.sbtakehomeassignment.common.states.ViewState
-import com.example.sbtakehomeassignment.common.uiComponents.AnimateContent
-import com.example.sbtakehomeassignment.common.uiComponents.AsyncImageLoader
 import com.example.sbtakehomeassignment.common.uiComponents.LoadingContentWrapper
 import com.example.sbtakehomeassignment.userInfo.domain.models.UserInfo
 import com.example.sbtakehomeassignment.userInfo.domain.models.UserRepo
 import com.example.sbtakehomeassignment.userInfo.ui.UserInfoScreen
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.runBlocking
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

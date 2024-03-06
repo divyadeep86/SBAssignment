@@ -40,8 +40,6 @@ import com.example.sbtakehomeassignment.ui.theme.SBTakeHomeAssignmentTheme
 import com.example.sbtakehomeassignment.userInfo.domain.models.UserInfo
 import com.example.sbtakehomeassignment.userInfo.domain.models.UserRepo
 import com.example.sbtakehomeassignment.userInfo.ui.components.RepoItem
-import com.example.sbtakehomeassignment.userRepoDetails.ui.UserRepoDetailsScreen
-import java.time.format.TextStyle
 
 
 /**
