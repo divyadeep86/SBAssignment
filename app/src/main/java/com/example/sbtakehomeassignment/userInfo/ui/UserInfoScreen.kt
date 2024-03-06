@@ -28,12 +28,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.sbtakehomeassignment.common.uiComponents.AnimateContent
 import com.example.sbtakehomeassignment.common.uiComponents.AsyncImageLoader
 import com.example.sbtakehomeassignment.common.uiComponents.TextInput
+import com.example.sbtakehomeassignment.common.utils.Testags
 import com.example.sbtakehomeassignment.ui.theme.SBTakeHomeAssignmentTheme
 import com.example.sbtakehomeassignment.userInfo.domain.models.UserInfo
 import com.example.sbtakehomeassignment.userInfo.domain.models.UserRepo
@@ -83,6 +85,7 @@ fun UserInfoScreen(
         modifier = Modifier
             .fillMaxWidth()
             .fillMaxHeight()
+            .testTag(Testags.UserInfoScreen)
             .clickable(
                 enabled = true,
                 onClick = { keyboardController?.hide() },
@@ -127,7 +130,8 @@ fun UserInfoScreen(
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .wrapContentSize(),
+                    .wrapContentSize()
+                    .testTag(Testags.UserImageContainer),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(4.dp)
             ) {
@@ -152,7 +156,9 @@ fun UserInfoScreen(
             LazyColumn(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .wrapContentHeight(),
+                    .wrapContentHeight()
+                    .testTag(Testags.RepoList),
+                verticalArrangement = Arrangement.spacedBy(8.dp),
                 contentPadding = PaddingValues(18.dp)
             ) {
                 items(userRepos) { userRepo ->

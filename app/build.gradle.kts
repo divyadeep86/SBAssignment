@@ -56,6 +56,7 @@ android {
         /*
         unitTests.isReturnDefaultValues = true*/
     }
+
 }
 
 dependencies {
@@ -83,21 +84,26 @@ dependencies {
     implementation (libs.androidx.hilt.navigation.compose)
     implementation (libs.hilt.android)
     kapt(libs.hilt.android.compiler)
+    kapt(libs.androidx.hilt.compiler)
 
     //Network
-    val retrofitVersion = "2.9.0"
-    val jsonConverterVersion = "0.8.0"
     implementation (libs.okhttp)
     implementation (libs.logging.interceptor)
     implementation(libs.kotlinx.serialization.json)
     implementation (libs.retrofit)
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    //   implementation "com.squareup.retrofit2:converter-gson:${RetrofitVersion}"
+
     implementation (libs.retrofit2.kotlinx.serialization.converter)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.navigation.testing)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
+   // androidTestImplementation (libs.hilt.android.testing)
+    androidTestImplementation(libs.hilt.android.testing.v251)
+    // ...with Kotlin.
+    kaptAndroidTest(libs.hilt.android.compiler)
+   // kaptAndroidTest(libs.hilt.android.compiler.v244)
+  //  androidTestImplementation(libs.hilt.android.testing.v244)
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
@@ -105,7 +111,6 @@ dependencies {
     testImplementation (libs.androidx.core.testing)
     testImplementation(libs.mockito.core)
     testImplementation (libs.mockito.kotlin)
-  //  testImplementation (libs.mockk.v1138)
     testImplementation(libs.mockwebserver)
 }
 

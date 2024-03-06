@@ -8,6 +8,7 @@ data class UserInfo(val id: Int=0, val avatar_url: String="", val name: String="
             return UserInfo(
                 id = 20978623,
                 name = "hello-worId",
+                avatar_url = "https://avatars.githubusercontent.com/u/583231?v=4",
             )
         }
     }

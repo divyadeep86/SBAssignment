@@ -2,7 +2,64 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="NavigationTest">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="RZCW21JYZ6T" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-03-06T08:23:12.894024900Z" />
+        </State>
+      </entry>
+      <entry key="TestSuites">
+        <State />
+      </entry>
+      <entry key="UserInfoScreenStateTest">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\divya\.android\avd\Pixel_2_API_33_1.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-03-06T04:48:13.027004600Z" />
+        </State>
+      </entry>
+      <entry key="UserInfoScreenUiStateTest">
+        <State />
+      </entry>
+      <entry key="UserRepoDetailsScreenUiStateTest">
+        <State />
+      </entry>
       <entry key="app">
+        <State>
+          <runningDeviceTargetSelectedWithDropDown>
+            <Target>
+              <type value="RUNNING_DEVICE_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="SERIAL_NUMBER" />
+                  <value value="RZCW21JYZ6T" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </runningDeviceTargetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-03-06T08:23:33.709084200Z" />
+        </State>
+      </entry>
+      <entry key="showUserInfoScreen_True_Expected()">
         <State />
       </entry>
     </value>

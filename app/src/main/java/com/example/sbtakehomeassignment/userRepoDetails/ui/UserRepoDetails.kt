@@ -19,10 +19,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.sbtakehomeassignment.R.drawable.baseline_arrow_back_24
+import com.example.sbtakehomeassignment.common.utils.Testags
 import com.example.sbtakehomeassignment.ui.theme.SBTakeHomeAssignmentTheme
 import com.example.sbtakehomeassignment.userInfo.domain.models.UserRepo
 import com.example.sbtakehomeassignment.userRepoDetails.ui.components.RepoAbout
@@ -52,7 +54,7 @@ import com.example.sbtakehomeassignment.userRepoDetails.ui.components.RepoHeader
 @Composable
 fun UserRepoDetailsScreen(userRepo: UserRepo?, navigateBack: () -> Unit) {
     Column(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier.fillMaxSize().testTag(Testags.UserRepoDetailsScreen),
         verticalArrangement = Arrangement.spacedBy(8.dp),
         horizontalAlignment = Alignment.Start
     ) {

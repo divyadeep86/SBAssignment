@@ -19,11 +19,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.sbtakehomeassignment.R
 import com.example.sbtakehomeassignment.common.uiComponents.CounterChip
+import com.example.sbtakehomeassignment.common.utils.Testags
 import com.example.sbtakehomeassignment.ui.theme.SBTakeHomeAssignmentTheme
 import com.example.sbtakehomeassignment.userInfo.domain.models.UserRepo
 import com.example.sbtakehomeassignment.userRepoDetails.ui.components.RepoHeader
@@ -38,6 +40,7 @@ fun RepoItem(userRepo: UserRepo, onclickItem: (Int) -> Unit) {
             .background(Color.White)
             .padding(14.dp)
             .defaultMinSize(minHeight = 60.dp)
+            .testTag(Testags.RepoItem)
             .clickable(enabled = true,
                 interactionSource = MutableInteractionSource(),
                 indication = null,

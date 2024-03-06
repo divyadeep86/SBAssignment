@@ -16,7 +16,7 @@ data class UserRepo(
     companion object {
         fun getMockData(): UserRepo {
             return UserRepo(
-                avatarUrl = "",
+                avatarUrl = "https://avatars.githubusercontent.com/u/583231?v=4",
                 id = 20978623,
                 name = "hello-worId",
                 forksCount = "100",
