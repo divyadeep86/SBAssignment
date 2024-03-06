@@ -65,6 +65,22 @@ Responsibilities
 - **Asynchronous Programming**: Leverages Kotlin Coroutines and Flow for handling asynchronous operations and real-time data updates, making the app more efficient and user-friendly.
 - **Composable Functions**: Uses Jetpack Compose for building the UI, adopting a declarative approach to UI development that results in more concise and readable code.
 
+## Testing
+In this project, we employ a comprehensive testing strategy that encompasses both unit and UI tests, leveraging the capabilities of JUnit, Mockito for mocking dependencies, and Jetpack Compose Testing for UI components. Our approach ensures robustness and reliability across different layers of the application, from business logic to user interface.
+
+#### Unit Testing
+- **Framework**: JUnit is used for writing unit tests, with Mockito providing support for mocking objects. This combination allows us to isolate and test individual components or functions in isolation from their dependencies.
+- **Approach**:
+- **ViewModels and Use Cases**: We test these components by mocking their dependencies (e.g., repositories) and asserting that they behave correctly given various inputs and states. This includes testing state changes, data loading, error handling, and triggering of actions.
+- **Repositories and Data Sources**: Mock web server responses or database interactions to verify data fetching, parsing, and error handling logic without relying on real network calls or database access.
+
+#### UI Testing
+- **Framework**: Jetpack Compose Testing library is utilized for UI tests, enabling us to interact with and assert the state of composable functions in a way that mimics user interaction.
+- **Approach**:
+- **State Verification**: Tests ensure that the UI correctly reflects the application state, including loading indicators, data presentation, and error messages.
+
+
+
 
 
 
