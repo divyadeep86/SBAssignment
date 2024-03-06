@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SBTakeHomeAssignment</string>
+    <string name="about">About</string>
+    <string name="watch">Watch</string>
+    <string name="star">Star</string>
+    <string name="fork">Fork</string>
+</resources>

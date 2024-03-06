@@ -1,0 +1,48 @@
+[
+  {
+    "id": 132935648,
+    "node_id": "MDEwOlJlcG9zaXRvcnkxMzI5MzU2NDg=",
+    "name": "boysenberry-repo-1",
+    "full_name": "octocat/boysenberry-repo-1",
+    "private": false,
+    "owner": {
+      "login": "octocat",
+      "id": 583231,
+      "node_id": "MDQ6VXNlcjU4MzIzMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/583231?v=4",
+      "gravatar_id": "",
+      "type": "User",
+      "site_admin": false
+    },
+    "html_url": "https://github.com/octocat/boysenberry-repo-1",
+    "description": "Testing",
+    "fork": true,
+    "homepage": "",
+    "size": 4,
+    "stargazers_count": 204,
+    "watchers_count": 204,
+    "language": null,
+    "has_issues": false,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 16,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [],
+    "visibility": "public",
+    "forks": 16,
+    "open_issues": 0,
+    "watchers": 204,
+    "default_branch": "master"
+  }
+
+]
