@@ -86,7 +86,8 @@ fun RepoHeader(userRepo: UserRepo) {
                     CounterChip(
                         leadingicon = R.drawable.fork,
                         title = stringResource(R.string.fork),
-                        counterValue = userRepo.forksCount
+                        counterValue = userRepo.forksCount,
+                        textColor = userRepo.color
                     )
                     CounterChip(
                         leadingicon = R.drawable.star,

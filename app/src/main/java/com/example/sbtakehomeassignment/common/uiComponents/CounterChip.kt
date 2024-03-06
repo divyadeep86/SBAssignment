@@ -24,7 +24,9 @@ import com.example.sbtakehomeassignment.userInfo.domain.models.UserRepo
 import com.example.sbtakehomeassignment.userRepoDetails.ui.components.RepoHeader
 
 @Composable
-fun CounterChip(leadingicon: Int, title: String, counterValue: String) {
+fun CounterChip(
+    leadingicon: Int, title: String, counterValue: String, textColor: Color = Color.DarkGray
+) {
     Row(
         modifier = Modifier
             .wrapContentSize()
@@ -40,18 +42,19 @@ fun CounterChip(leadingicon: Int, title: String, counterValue: String) {
             tint = Color.Gray
         )
         Text(
-            text = title, style = MaterialTheme.typography.titleSmall.copy(color = Color.DarkGray)
+            text = title, style = MaterialTheme.typography.titleSmall.copy(color = textColor)
         )
 
         Text(
             modifier = Modifier.wrapContentSize(),
             text = counterValue,
-            style = MaterialTheme.typography.titleSmall.copy(color = Color.DarkGray)
+            style = MaterialTheme.typography.titleSmall.copy(color = textColor)
         )
     }
 
 
 }
+
 @Preview(showBackground = true)
 @Composable
 fun PreviewCounterChip() {

@@ -1,17 +1,19 @@
 package com.example.sbtakehomeassignment.userInfo.domain.models
 
+import androidx.compose.ui.graphics.Color
 import com.example.sbtakehomeassignment.common.utils.formatNumber
 import com.example.sbtakehomeassignment.userInfo.data.models.UserRepoRemote
 
 data class UserRepo(
     val id: Int,
     val name: String,
-    val avatarUrl:String,
+    val avatarUrl: String,
     val forksCount: String,
     val watchCount: String,
     val starCount: String,
     val description: String?,
-    val visibility:String
+    val visibility: String,
+    val color: Color = Color.Gray
 ) {
     companion object {
         fun getMockData(): UserRepo {
@@ -23,8 +25,9 @@ data class UserRepo(
                 watchCount = "100",
                 starCount = 10000015.formatNumber(),
                 description = "This is test description",
-                visibility = "Public"
-            )
+                visibility = "Public",
+
+                )
         }
     }
 
@@ -32,14 +35,15 @@ data class UserRepo(
 }
 
 fun UserRepoRemote.toUserRepo(): UserRepo {
-    return UserRepo(
-        id = id,
+    return UserRepo(id = id,
         avatarUrl = owner.avatar_url,
         name = name,
-        forksCount = forks_count?.formatNumber() ?:"0"  ,
-        watchCount = watchers_count ?.formatNumber() ?:"0",
-        starCount = stargazers_count ?.formatNumber() ?:"0",
+        forksCount = forks_count?.formatNumber() ?: "0",
+
+        watchCount = watchers_count?.formatNumber() ?: "0",
+        starCount = stargazers_count?.formatNumber() ?: "0",
         description = description,
-        visibility = if(private) "Private" else "Public"
-    )
+        color = forks_count?.let { if (forks_count > 5000) Color.Red else Color.DarkGray }
+            ?: Color.Gray,
+        visibility = if (private) "Private" else "Public")
 }
